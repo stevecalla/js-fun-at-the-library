@@ -1,6 +1,11 @@
+function shelfBook(book, shelf) {
+  console.log(shelf)
+  shelf.unshift(book)
+}
+
 
 module.exports = {
-  // shelfBook,
+  shelfBook,
   // unshelfBook,
   // listTitles,
   // searchShelf
