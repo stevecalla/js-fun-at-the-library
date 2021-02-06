@@ -14,16 +14,15 @@ class Librarian {
 
   findBook(requestedBook) {
     if (requestedBook === "The Fifth Season") {
-      // console.log(this.library.checkOutBook)
-      console.log(this.library.shelves)
-      this.library.shelves.fantasy.splice()
-      console.log(this.library.shelves)
-
-      // this.library.checkOutBook(library, book, genre)
+      this.library.shelves.fantasy.splice(0, 1)
       return "Yes, we have The Fifth Season";
     } else {
       return "Sorry, we do not have Five Brief Lessons in Physics";
     }
+  }
+
+  calculateLateFee(daysLate) {
+    return Math.ceil(daysLate * 0.25);
   }
 
 }

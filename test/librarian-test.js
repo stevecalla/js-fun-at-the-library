@@ -90,7 +90,7 @@ describe('Librarian (class)', function() {
     assert.deepEqual(librarian.library.shelves.fantasy, []);
   });
 
-  it.skip('calculateLateFee should charge the customer a fee of 0.25 per day the book is late, rounded up to the closest whole number (integer)', function() {
+  it('calculateLateFee should charge the customer a fee of 0.25 per day the book is late, rounded up to the closest whole number (integer)', function() {
     var library = createLibrary("Aurora Public Library");
     var librarian = new Librarian("Casey", library);
     var threeDaysLate = librarian.calculateLateFee(3);
